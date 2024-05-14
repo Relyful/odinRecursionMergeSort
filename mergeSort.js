@@ -15,10 +15,10 @@ function mergeSort(array) {
       secondHalfNumber = secondHalfSorted[0];
       if (firstHalfNumber > secondHalfNumber) {
         mergedSortedArr.push(secondHalfNumber);
-        secondHalfNumber = secondHalfSorted.shift();
+        secondHalfSorted.shift();
       } else {
         mergedSortedArr.push(firstHalfNumber);
-        firstHalfNumber = firstHalfSorted.shift();
+        firstHalfSorted.shift();
       }
     }
     mergedSortedArr.push(...firstHalfSorted);
